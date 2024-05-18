@@ -1,0 +1,36 @@
+WHEN DOWNLOADING YOU SHALL BE RECEIVING THE FOLLOWING FILES:
+	run.txt
+	TestQuestionGenerator.py
+	README
+
+In the run.txt you will find the command for executing the code, but it needs to be setted up.
+	
+	You may check the following:
+		- The path for the code is correct. In the case the run.txt file is in the same folder as the code, it is, if not
+		  it shall be changed to the correct one.
+		
+		- In case you want to have arguments:
+			- Note that you may remove either the 3rd argument, the 2nd and the 3rd or all of them, not any step in between.
+			- In the case you dont want to have arguments you will be promped with a question asking you the path for the 				  questions file. If not, you will have to set it in the file.
+
+			- The 2nd argument is the number of questions you want to be asked, in the case you set a value greater than the
+			  number of questions it will get the maximum possible. The default value is 10.
+
+			- The 3rd argument is the title for the execution, in case nothing is set it will be set to "QUESTIONS".
+
+Done this you shall rename the file for it to be: "set_the_name_you_want".bat
+You may create several files, one for each file of questions.
+
+
+To execute the code:
+	You need to have installed Python 3.10 onward, download in: 
+		https://www.python.org/downloads/
+
+	The code was written in python 3.10. In the case any issues are encountered, return to this version. You may find it here:
+		https://www.python.org/downloads/release/python-3100/
+
+	Make sure you have the correct libraries by running in the cmd the following commands:	
+		-> pip install colorama
+		-> pip install random
+
+	Done this, double click in the .bat file you want to execute and done.
