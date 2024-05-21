@@ -1,0 +1,108 @@
+//; UNIT 1
+Which one of this is also a specific type of translator;Interpreter;Both;Compiler;None;3
+Which are the features of a programming language;Domain, Concurrency Support, Implementation, Type Checking;Abstraction level, Domain, Concurrency Support, Implementation, Type Checking and Source Code Representation;Abstraction level, Domain, Concurrency Support, Implementation, Type Checking, Visual, JIT;Textual or Visual;2
+What is a programming paradigm?;an approach to solve abstractions and concepts used to represent programs (objects, functions, constraints, predicates…);an approach to solve programming problems based on solely and concepts used to represent programs (objects, functions, constraints, predicates…);an approach to solve programming problems based on the abstractions and concepts used to represent programs (objects, functions, constraints, predicates…);an approach to represent programs (objects, functions, constraints, predicates…);3
+Does a programming paradigm constitute a language feature?;Yes;No;2
+What paradigm does SQL fall into...;Imperative;Impositive;Explicit;Declarative;Unexplicit;4
+Which one of these does not form part of the main paradigms;Structural Procedural;Object Oriented;Logic or Mathematical;Functional;Structural Fixed;5
+Encapsulation, inheritance, polymorphism and dynamic binding are common elements in the...;Logic Paradigm;Functional Paradigm;Structural Fixed Paradigm;Object Oriented Paradigm;Structural Procedural Paradigm;4
+When an object is an instance of a class it is said to be a;Prototype Based Model;Class Based Model;Instanciation Based Model;Object Based Model;2
+When data is never modified we are typically working in a...;Logic Paradigm;Functional Paradigm;Structural Fixed Paradigm;Object Oriented Paradigm;Structural Procedural Paradigm;2
+Functional Paradigm is a...;Imperative Paradigm;Impositive Paradigm;Explicit Paradimg;Declarative Paradimg;Unexplicit Paradigm;3
+In Declarative Paradigms..;A function will NEVER have side effects;A function MAY have side effects;A function ALWAYS has side effects;1
+In Constraint Solving, the relations between variables...;Are not declared;Are stated in the form of constraints as equations;Are stated in the form of constraints as inequations; Are declared by means of booleans;3
+In Constraint Solving, which one of this implies inequality?:;a != b;!(a  = b);!(a == b);a=/=>b;a<>b;5
+On Real Time languages, Hard-real times imply "Unfulfilling a time constraint means a total system failure" whilst Soft-real time means "Unfulfilling a time constraint degrades the quality of the system, but a recovery mechanism is provided continuing its execution";True;False;1
+//; UNIT 2A REGARDING C#
+Assemblies are known to be a collection of application resources but, are they all packed together?;Yes, they form packages or libraries;Yes they form packages, but not libraries;No;3
+Assemblies have a collection of at least one module. Which type can this module be?:;.exe or .dll;.exe;.dll;.java;.o;.h;1
+What are namespaces in C# used for?;Grouping methods of a class (namespace Person);Grouping classes regarding their type (namespace int, namespace string..);Grouping types related to a particular functionality (namespace codeToCountDucks);3
+Do namespaces provide any hiding mechanism?;Yes, like packages do in Java;No, but Java packages do;No and neither Java packages;Yes, but Java packages don't;2
+Do assemblies provide any hiding mechanism?;Yes, like packages do in Java;No, but Java packages do;No and neither Java packages;Yes, but Java packages don't;1
+Do namespaces provide any physical grouping;Yes it does, as well as logical;Yes, it does, but it do not provide any logical grouping;No it does not specifically, nevertheless it does have logical. For that you have assemblies; No it does not specifically and neither do assemblies;3
+What are the hiding levels for the members in a class?;Public, private, protected;Public, private, protected, internal and protected internal;Public, private, protected and internal;2
+Protected and Internal are different in the sense that;Protected only allows from the same class and internal only from the same namespace;Protected only allows from the same namespace and internal only from the same assembly;Protected only allows from the same namespace and internal only from the same class;Protected only allows from the same class and internal only from the same assembly;4
+Internal (I) and Protected Internal (PI) are different because:;I only allows from the same class and PI from any class and derived classes;I only allows from the same assembly and PI from any assembly and derived assembly;I only allows from the same namespace and PI from any namespace and derived namespace;2
+In C#, to denote a value that cannot be modified it is declared as...;const;constant;fin;final;stat;static;1
+In C# you may use at the end of the cases of a switch...;"break";"goto (case)";"finalize";"break" or "goto (case)";"finalize" or "break";4
+In C#, as well as constructors that execute when creating an object, on destroy you can have a destructor;True;False;1
+To denote a destructor in C# you use...;public destructor MyClass();destructor MyClass();MyClass[];~MyClass();!MyClass();<>MyClass();4
+Does the destructor in C# assures the execution?;Yes;No;1
+When wanting to create a class in different files in C# you should use the keyword _ before the declaration of the class. Which keyword is it?;disected;disect;divided;divide;partialize;partial;6
+In C# you may have a class constructor and an object constructor. When creating a static class which one cannot be used?;Class constructor;Object constructor;Both can be used;None can be used;2
+Can Strings be muted in C#?;Yes they can, by accessing it string[i] = "y";No it cannot; Yes it can but only making use of StringBuilder;Yes, it can without any special procedure;3
+In C# is not mandatory to declare the size of a new empty array;True;False;2
+Do structs support inheritance in C#;Yes;No;2
+Can structs in C# implement destructors?;Yes;No;2
+Structs in C# are stored in...;The heap;None of the options;The stack;3
+In C# you can pass parameters in three ways, which ones?;By reference (ref), By reference (in), By reference (out); By reference (in), By reference (out), By reference (in out kw(ref)); By value, By refference (in out kw(ref)), By refference (in); By refference (out), By value, By refference (in out kw(ref));4
+In C#, just like in Python, you can initialize variables in a method and  there omit their declaration when calling the method (assume the python comparison is true);True;False;1
+When creating an extension method in C#, the keyword "this" must be...;Not used;Used as the first parameter;Used as the last parameter;Used as a parameter wherever;2
+To declare inheritance from either an Interface or a Parent Class, in C# you use...;class Derived implements Base; class Base fathers Derived;class Derived:Base;class Derived extends Base;3
+If no inheritance is declared, the class...;Derives from System.Class;Do not derive from anything;Derives from System.Object;3
+The keyword to pass arguments to a parent class in C# is...;superclass(args);toParent(args);:fatherclass(args);:base(args);:ToParent(args);4
+For being able to have a dynamic binding variable we have to declare the variable as a...;Virtual Father object;Father Object;Physical Children object;Children object;Using keyword "dyn";Using any name, dynamic binding is a property;1
+Regarding C#'s HashCode;Objects sharing hashCode must be equal;Equal objects share hashCode;Equal hashCodes mean different objects;2
+Do the built in types of C# derive from Object;Yes, all types do;No, primitive classes do not derive from Object;2
+Structs derive from what class?;Value;Object, that derives from ValueType;ValueType, that derives from Object;ValueType;3
+For a class to have the declaration "abstract"...;It shall have all abstract methods;It does not need any special requirement;It needs at least one abstract method;3
+Does C# provide multiple inheritance?;Yes;No;2
+When creating an interface, what is the mandatory starting part of its name?;It must start with I (IEnumerable...);It must start with C (CEnumerable);It does not need any specific starting though I is recommended;It does not need any specific starting though C is recommended;3
+To tell an exception to run in C# we use the keyword...;raise;pull;catch;throw;4
+In C# destructors are deterministic thus we relay on them always;True;False;2
+To get the default value of a type in C# you use the call...;T.default();T.DEFAULT;default(T);:Default(T);3
+To use an IEnumerable for any element T we shall use IEnumerable<IEnumerator<T>> rather than IEnumerable<T>;True;False;1
+If you want to make any parameter nullable you shall;use "type?" (int?, char?);You cannot;use "type name?" (int counter?, char letter?);1
+Is there any difference between System.Collections and System.Collections.Generic regarding optimization?;Yes, Generic are faster and provide better performance;Yes, non generic are faster and provide better performance;Not at all;1
+//; UNIT 2B
+What does an object comprises?;Solely Data;Data and Methods;Solely Methods;A Class;2
+___ is the process of compartmentalizing the elements of an abstraction that constitute its structure and behavior;Inhibition;Capacitation;Encapsulation;3
+A benefit of encapsulation is...;Maintainability and Robustness;Mantainability, Reutilization and Robustness;Mantainability and Reutilization;Reutilization and Robustness;2
+What favours maintainability and reutilization?;loose cohesion and high coupling;high coupling and high cohesion;loose coupling and high cohesion;loose coupling and loose cohesion;3
+In case a program is coded in a multiple inheritance friendly language, what derives the child?;All the elements of the first class that is called Main Father and some of the rest;Some of each, depending on how they work together;Random elements;All from all;4
+In C# when bounding a generic argument T, we shall use the clause...;where T:I...();having T as I...();and T implements I..();1
+What is the keyword for implicity typed local variables in C#;let;None;var;variable;Func;3
+//; UNIT 3
+Lambda calculus is...;A mathematical formula;The smallest universal class;The smallest uiversal math calculus;The smallest universal programming language;4
+When evaluating the lambda expression (lx.x+x)(3) we are returned;3;6;9;12;2
+Does the order of lambda operations matter regarding the result?;Yes;No;2
+What is the result of this lambda expression (lx.x+x)(ly.y*y)(2);2;16;8;null;3
+Which of this pairs are alpha conversions?;(lx.x+x) = (ly.x+y);(lx.x+x) = (lx.y+y);(lx.x+x) = (ly.y+y);(ly.x+x) = (lx.x+x);3
+What is program verification;To check if a program is a program;To check if a program satisfies its purpose; To check if a program can be compiled;2
+What is a feature of the Functional Paradigm;The use of object deriving from classes;Classes are another common type such as int or char;Functions are another common types such as int or char;3
+When a function englobes in its development another function, is called a...;Father Function;Higher Function;Lower Function;Higher Order Function;Lower Order Function;Father Order Function;4
+An example of a correct association to a delegate in C# (such as delegate int mD(int a, int b) and known a method int sum(int a, int b) would be =; mD mD1 = md(obj.sum), mD1(a,b);mD=obj.sum,mD(a,b);mD=sum(a,b);1
+Given a function Func<T1,T2> it...;Receives T1 and T2;Receives T2 and returns T1;Receives T1 and returns T2;Returns a touple T1, T2;3
+Actions return a value;True;False;2
+Predicates return an int;True;False;2
+Which symbol separates in C# lambda expressions the declaration from the body?;==>;=>;->;>;2
+Is it possible for C# to create a collection of lambda functions and execute each one at a time?;Yes;No;1
+Is it possible for C# to create lambda recurssive functions?;Yes, using keyword "rec";Yes,as a higher order function of itself;No;2
+A ___ is a first-class function together with its referencing environment: a table storing a reference to each free variable;FC Function;Commit;Closure;3
+In the lambda expression ly.x+y, x is a...;Free variable in all contexts;Free variable in that lambda expression but bounded to another;Is a syntax error;Is an acronym for the recursion of that lambda expression;2
+Closures allow representing...;Interative Control Structures;Both;None;Objects and infromation hiding;2
+___ is the technique of transforming a function with multiple parameters in a function with a single parameter;Encapsulating;Closing;Salsing;Currying;4
+An example of Currying usage would be;add(1,2,3);add(1)(2,3);add(1,2)(3);add(1)(2)(3);4
+Can a curryied function be called partialy;True;False;1
+What are the benefits of Partial Applications;Make the code more complex;Make the code work faster;Save code;Decrease students marks;3
+___is the representation of state of computation at a given point of execution;Snapshot;Photo;Continuity;Image;Continuation;5
+When using in C# the instruction yield return the execution;Stops;Wait for an action to continue;Continues;Waits 10 seconds and continues;3
+Which evaluation provides higher runtime performance?;The same;Lower Evaluation;Higher Evaluation;2
+An expression that can ve replaced by its value without causing any problem is said to have...;Referencial Transparency;Value Transparency;Transparencey;Equilibrium;1
+When a function always evaluate the same for the same input is said to be;Unpure;Transparent;Fictional;Pure;Opaque;4
+Memoization may be applied to...;Referential Opaque expressions;Pure expressions;Unpure expressions;Referential transparent expressions;4
+Introspection IS a good approach for Pattern Matching in modern C#;True;False;2
+F# provides a good approach for Pattern Matching;True;False;1
+In F# you may check the structure of the call of a class without paying attention to the types by making use of...;Square(*);Square(+,+,+);Square_;Square*;Square(_,_,_);5
+In C# you may create a list based on an existing one...;Natively without using anythin special;By using list comprehension;You can't;2
+An approximation of list comprehension in C# is...;Listing;LinQ;Linux;Lister;2
+//; UNIT 4
+//; UNIT 5
+C# provides a keyword "dynamic" that postpones type checking;True;False;1
+Duck typing means...;The first value of the object determines the type;The actual value of the object determines the actual type;The last element determines the type;2
+Regarding multidispatch and multimethods; The first one is a mechanism of the second; The second is a mechanism of the first; They are both independent;2
+__ is the capability of a computational system to reason about and act upon itself, adjusting itself to changing conditions;Introspection;Intercession;Reflection;3
+__ :Self-representation of programs can be dynamically consulted but not modified;Introspection;Intercession;Reflection;1
+__: Its own execution state can be modified, altering its own interpretation or meaning;Introspection;Intercession;Reflection;2
+Metaprogramming is;Is the capability of writing programs that modify a metaverse;Is the capability of writing programs that write or manipulate other programs;Is the capability of writing programs that write or manipulate other files;2
+//; END

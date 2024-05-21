@@ -31,7 +31,7 @@ def run(path_of_file, number_of_questions=10):
 
     number_of_questions = min(number_of_questions, len(questions))
 
-    final_result = correct_guesses*100/number_of_questions
+    final_result = correct_guesses * 100 / number_of_questions
 
     color = get_color(final_result)
 
@@ -51,7 +51,7 @@ def ask_questions(questions):
         print(f"\n\t{counter}. {question[0]}:", end="\n")
         i = 0
         for i in range(1, len(question) - 1):
-            print(f"\t\t{i}) {question[i]}.")
+            print(f"\t\t{i}) {question[i].strip()}.")
 
         result = input("\n\t  What is your answer?: ")
         while not result.isnumeric() or int(result) > i or int(result) <= 0:
@@ -100,9 +100,25 @@ def show_results(correct_guesses, number_of_questions, failed, color, questions)
         print(f"\n{color}Congratulations for answering all your questions correct!{Style.RESET_ALL}")
 
 
+def read_file(file_of_path):
+    try:
+        file = open(file_of_path, "r")
+        return file.readlines()
+    except FileNotFoundError:
+        raise Exception(f"\n\n\t{Fore.LIGHTRED_EX}Invalid file path: {file_of_path}{Style.RESET_ALL}")
+
+
 def read_questions(file_of_path, number_of_questions):
+    uncommented_data = []
     fileData = read_file(file_of_path)
-    selected_data = random.sample(fileData, k=min(number_of_questions, len(fileData)))
+
+    for line in fileData:
+        if "//;" in line:
+            continue
+        else:
+            uncommented_data = uncommented_data[::] + [line]
+
+    selected_data = random.sample(uncommented_data, k=min(number_of_questions, len(fileData)))
     parsed_data = []
     for line in selected_data:
         values = line.split(";")
@@ -112,19 +128,11 @@ def read_questions(file_of_path, number_of_questions):
             print(values[-1])
             raise Exception(f"{Fore.LIGHTRED_EX}\n\nInvalid question format on line\n"
                             f"\t\t-\"{line}\".\n"
-                            f"Expected as last element an integer between 1 and {len(values)-2} "
+                            f"Expected as last element an integer between 1 and {len(values) - 2} "
                             f"and got ({values[-1]} -> isnumeric:{values[-1].strip().isnumeric()}).{Style.RESET_ALL}")
         parsed_data.append(values)
 
     return parsed_data
-
-
-def read_file(file_of_path):
-    try:
-        file = open(file_of_path, "r")
-        return file.readlines()
-    except FileNotFoundError:
-        raise Exception(f"\n\n\t{Fore.LIGHTRED_EX}Invalid file path: {file_of_path}{Style.RESET_ALL}")
 
 
 if __name__ == "__main__":
