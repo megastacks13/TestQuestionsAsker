@@ -34,3 +34,10 @@ To execute the code:
 		-> pip install random
 
 	Done this, double click in the .bat file you want to execute and done.
+
+When creating a questions file you should have in mind the following considerations:
+    - Spacing is done on the printing
+    - Each new line implies a new question
+    - If the last element of the line is not an integer from 1 to n being n the number of questions an exception will arise.
+    - Leave spaces between questions add "//;" in the line you want to skip WITHOUT SPACES.
+    - To separate questions from answers use ";"
