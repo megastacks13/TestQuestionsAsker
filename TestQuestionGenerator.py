@@ -24,8 +24,8 @@ from colorama import Style
 colorama_init()
 
 
-def run(filePath, number_of_questions=10):
-    questions = read_questions(filePath, number_of_questions)
+def run(path_of_file, number_of_questions=10):
+    questions = read_questions(path_of_file, number_of_questions)
 
     failed, correct_guesses = ask_questions(questions)
 
@@ -51,7 +51,7 @@ def ask_questions(questions):
         print(f"\n\t{counter}. {question[0]}:", end="\n")
         i = 0
         for i in range(1, len(question) - 1):
-            print(f"\t\t{i}){question[i]}.")
+            print(f"\t\t{i}) {question[i]}.")
 
         result = input("\n\t  What is your answer?: ")
         while not result.isnumeric() or int(result) > i or int(result) <= 0:
@@ -100,8 +100,8 @@ def show_results(correct_guesses, number_of_questions, failed, color, questions)
         print(f"\n{color}Congratulations for answering all your questions correct!{Style.RESET_ALL}")
 
 
-def read_questions(filePath, number_of_questions):
-    fileData = readFile(filePath)
+def read_questions(file_of_path, number_of_questions):
+    fileData = read_file(file_of_path)
     selected_data = random.sample(fileData, k=min(number_of_questions, len(fileData)))
     parsed_data = []
     for line in selected_data:
@@ -117,12 +117,12 @@ def read_questions(filePath, number_of_questions):
     return parsed_data
 
 
-def readFile(filePath):
+def read_file(file_of_path):
     try:
-        file = open(filePath, "r")
+        file = open(file_of_path, "r")
         return file.readlines()
     except FileNotFoundError:
-        raise Exception(f"\n\n\t{Fore.LIGHTRED_EX}Invalid file path: {filePath}{Style.RESET_ALL}")
+        raise Exception(f"\n\n\t{Fore.LIGHTRED_EX}Invalid file path: {file_of_path}{Style.RESET_ALL}")
 
 
 if __name__ == "__main__":
