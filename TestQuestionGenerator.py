@@ -106,6 +106,8 @@ def read_questions(file_of_path, number_of_questions):
     parsed_data = []
     for line in selected_data:
         values = line.split(";")
+        if values[0] == "//":
+            continue
         if (not values[-1].strip().isnumeric()) or int(values[-1]) > len(values) - 2:
             print(values[-1])
             raise Exception(f"{Fore.LIGHTRED_EX}\n\nInvalid question format on line\n"
