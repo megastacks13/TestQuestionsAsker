@@ -87,7 +87,7 @@ Can a curryied function be called partialy;True;False;1
 What are the benefits of Partial Applications;Make the code more complex;Make the code work faster;Save code;Decrease students marks;3
 ___is the representation of state of computation at a given point of execution;Snapshot;Photo;Continuity;Image;Continuation;5
 When using in C# the instruction yield return the execution;Stops;Wait for an action to continue;Continues;Waits 10 seconds and continues;3
-Which evaluation provides higher runtime performance?;The same;Lower Evaluation;Higher Evaluation;2
+WHich evaluation provides higher runtime performance?;The same;Lower Evaluation;Higher Evaluation;2
 An expression that can ve replaced by its value without causing any problem is said to have...;Referencial Transparency;Value Transparency;Transparencey;Equilibrium;1
 When a function always evaluate the same for the same input is said to be;Unpure;Transparent;Fictional;Pure;Opaque;4
 Memoization may be applied to...;Referential Opaque expressions;Pure expressions;Unpure expressions;Referential transparent expressions;4
@@ -97,6 +97,25 @@ In F# you may check the structure of the call of a class without paying attentio
 In C# you may create a list based on an existing one...;Natively without using anythin special;By using list comprehension;You can't;2
 An approximation of list comprehension in C# is...;Listing;LinQ;Linux;Lister;2
 //; UNIT 4
+___is the property of computational systems in which several tasks are being executed simultaneously, and are potentially interacting with each other;Concusing;Concurrency;Parallelization;2
+What types of parallelism can we find?;Task and Data;Process and Unit;Structure and data;Parallel and unparallel;1
+Is it mandatory to use keywords async and await whenever we want to do asynchonous tasks?;Yes, always;No,Never;No, only when using thread;No,only if not using threads;4
+Do we need to install a library to do threading in C#;Yes, the Threading library;No, it comes with System;No and needs no import;Yes, Thread.Threading;2
+The situation where the result of executing multiple concurrent tasks depend on the sequence of execution is called ___; unpure condition;race condition;random condition;name condition;2
+Do free variables impose a problem when using them vanilla in multithreading?;Yes;No;1
+To avoid free variables problems you may...;Pass parameters;Interlock;Clone variables;All;None;1 and 3;1 and 2;4
+When a single processor performs more than one task at the same time is called...;Single Processor Parallelism;Single Processor Concurrency;Context Switching;Task Switching;3
+Thread Pools allow...;To have clean and fresh threads;To reuse threads;To have infinite threads;To use a pool of threads in a server to borrow which we want;2
+To check if a Thread is Daemon and runs in Background, we access the property...;thread.IsDaemon;thread.IsForeground;thread.IsBackground;thread.IsUser;3
+When using C# Tasks, it is possible to whait partialy with Task.WhenAll and fully with Task.WhenAny;True;False;2
+An advantage of Tasks in comparison with threads is the wrapping of exceptions;True;False;1
+Are 64 -bit assingments atomic in .Net;Yes;No;2
+Are mutex names exclusive or can they repeat (regarding one CPU);They are exclusive;They can repeat;1
+A thread safe data structure...;Prevents Deadlocks;Prevents Harming;Prevents Race Conditions;3
+Read-only, as well as read and write only operations requiere data locking;True;False;2
+Does ReaderWriterLockSlim supports any kind of recurssion;No, to avoid deadlocks;Yes, natively;Yes, by passing LockRecursionPolicy.SupportsRecursion on the constructor;Yes, but you need an extra library;3
+In TPL with local partition do you need to use locks?;Yes;No;2
+In PLinQ is faster to use Aggregate or Aggregate and Select?;Aggregate;Aggregate and Select;Is the same as long as you set AsParallel();Is the same;2
 //; UNIT 5
 C# provides a keyword "dynamic" that postpones type checking;True;False;1
 Duck typing means...;The first value of the object determines the type;The actual value of the object determines the actual type;The last element determines the type;2
